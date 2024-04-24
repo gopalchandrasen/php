@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+</head>
+<body>
+<!-- Create a HTML form which will have following fields: Roll, Name, Date of Birth, Male or Female, Preferred event (Cricket, Football, Painting, Singing, Playing Music). After filling up the form, submit the form by clicking on a submit button. The data will be sent to another php file by post method and executing that file you will display all the data sent from the previous file along with the age calculated  from his/her date of birth. -->
+
+    <form action="ass1.php" method="post">
+        <p><label for="roll">Enter roll</label>
+            <input type="text" name="roll" id="roll" placeholder="Enter your roll"><br></p>
+            <p><label for="name">Enter name</label>
+                <input type="text" name="name" id="name" placeholder="Enter name"><br></p>
+            <p><label for="dob">Enter date of birth</label>
+                <input type="date" name="dob" id="dob" placeholder="Enter date of birth" max="2050-12-31" min="2000-01-01"><br></p>
+            <p>Enter gender <br>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="Male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="Female">
+            </p>
+            <p>Preferred event: <br> 
+                <label for="cricket">Cricket</label>
+                <input type="checkbox" name="event[]" id="cricket" value="Cricket">
+                <label for="football">Football</label>
+                <input type="checkbox" name="event[]" id="football" value="Football">
+                <label for="painting">Painting</label>
+                <input type="checkbox" name="event[]" id="painting" value="Painting">
+                <label for="singing">Singing</label>
+                <input type="checkbox" name="event[]" id="singing" value="Singing">
+                <label for="music">Music</label>
+                <input type="checkbox" name="event[]" id="music" value="Music">
+            </p>
+            <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
